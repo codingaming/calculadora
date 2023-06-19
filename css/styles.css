@@ -1,28 +1,85 @@
+*,*:hover,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #fd385f;
+    font-family: 'Kano';
+    background-image: url("/img/kameHouse.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
   }
-  
-  .calculadora {
-    width: 250px;
+  h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    text-shadow: 3px 3px 4px white;
+  }
+  textarea{
+    resize: none;
+    
+  }
+  .calculadora,.capa {
+
+    width: 300px;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    background-color: gray;
+    background: rgb(255, 255, 255,50%);
     gap: 0.5em;
-    justify-content: space-between;
+    justify-content: space-around;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    box-shadow: 0px 0px 0.5rem 0.1rem rgb(0, 0, 0,30%);
+    
   }
-  
+/*   .capa{
+    position: absolute;
+    background: rgb(255, 255, 255,50%);
+    
+  } */
+
   button {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 
+      0px 0px 0.1rem 0.1rem rgb(0, 0, 0,10%)
+    ,inset 0px 0px 1rem 0.1rem rgb(0, 0, 0,10%);
+    font-size: 18px;
+    background: transparent;
+    color: black;
   }
-  
+  button:hover{
+    box-shadow: 
+      0px 0px 2rem -0.5rem #ff8d30
+    ,inset 0px 0px 1rem 0.1rem rgb(0, 0, 0,15%);
+    font-size: 18px;
+    background: white;
+  }
   .resultado {
+    border-radius: 5px;
     display: block;
+    font-size: 1.5rem;
     width: 100%;
-    border: 2px solid black;
-    height: 2em;
-  }
+    border: 1px solid rgb(0, 0, 0,30%);
+    height: 3em;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+    background-color: rgb(255, 255, 255,80%);
+    }
   

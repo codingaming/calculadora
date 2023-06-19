@@ -1,4 +1,4 @@
-const display = document.querySelector(".resultado");
+/* const display = document.querySelector(".resultado");
 const botones = document.querySelectorAll("button");
 let num;
 let num2 = 2;
@@ -25,3 +25,4 @@ const operacion = () => {
   console.log("=>", x);
   display.innerHTML = eval(x);
 };
+ */
