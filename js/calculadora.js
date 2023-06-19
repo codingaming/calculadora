@@ -1,28 +1,15 @@
-/* const display = document.querySelector(".resultado");
-const botones = document.querySelectorAll("button");
-let num;
-let num2 = 2;
-let resultado = 0;
-let operador;
-botones.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    console.log(button.textContent);
+/*
+  Plantilla: HunigoleSan
+*/
+/*        PROBLEMA: Programa tu calculadora */
+/* 
+   Deberás cumplir todas las operaciones básicas: suma, resta, multiplicación, división,
+   también debe permitir limpiar el resultado.
 
-    if (button.textContent === "=") {
-      operacion();
-      return;
-    }
-    displayPring(button.textContent);
-  });
-});
+   PROPÓSITO: esta tarea consiste en lograr conseguir el objetivo para desarrollar la lógica de programación
+   MISIÓN: Aplicar todos los conocimientos que tienes sobre JavaScript para lograr el objetivo
+   VISIÓN: Comprometete a terminar la tarea, para confirmar tu propia determinación, hacia tus metas.
 
-const displayPring = (n) => {
-  display.innerHTML += n;
-};
-
-const operacion = () => {
-  let x = display.innerHTML;
-  console.log("=>", x);
-  display.innerHTML = eval(x);
-};
- */
+   NOTA: Dependerá de ti, que tan lejos desees llevar la funcionalidad de la calculadora
+   PSDT: Si crees que es necesario cambiar la estructura del HTML y CSS, puedes hacerlo con gusto.
+   */

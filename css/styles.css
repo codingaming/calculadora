@@ -1,4 +1,4 @@
-*,*:hover,*::after,*::before{
+*,*::after,*::before{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #fd385f;
-    font-family: 'Kano';
+    font-family: 'Kano',Arial, Helvetica, sans-serif;
     background-image: url("/img/kameHouse.jpg");
     position: relative;
     background-repeat: no-repeat;
@@ -26,7 +26,9 @@ body {
   }
   textarea{
     resize: none;
+    outline: none;
     
+    padding: 5px;
   }
   .calculadora,.capa {
 
@@ -42,29 +44,23 @@ body {
     box-shadow: 0px 0px 0.5rem 0.1rem rgb(0, 0, 0,30%);
     
   }
-/*   .capa{
-    position: absolute;
-    background: rgb(255, 255, 255,50%);
-    
-  } */
-
   button {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 5px;
     border: 0px;
-    box-shadow: 
-      0px 0px 0.1rem 0.1rem rgb(0, 0, 0,10%)
-    ,inset 0px 0px 1rem 0.1rem rgb(0, 0, 0,10%);
+    box-shadow: 0px 0px 0.1rem 0.1rem rgb(0, 0, 0,10%),
+      inset 0px 0px 1rem 0.1rem rgb(0, 0, 0,10%);
     font-size: 18px;
     background: transparent;
     color: black;
+    background: rgb(255, 255, 255,40%);
   }
   button:hover{
     box-shadow: 
       0px 0px 2rem -0.5rem #ff8d30
     ,inset 0px 0px 1rem 0.1rem rgb(0, 0, 0,15%);
-    font-size: 18px;
+    
     background: white;
   }
   .resultado {
