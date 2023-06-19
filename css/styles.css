@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calculadora {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+    gap: 0.5em;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .resultado {
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    height: 2em;
+  }
+  
