@@ -12,7 +12,7 @@ body {
   align-items: center;
   background: #fd385f;
   font-family: "Kano", Arial, Helvetica, sans-serif;
-  background-image: url("./img/kameHouse.jpg");
+  background-image: url("../img/kameHouse.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
