@@ -1,15 +1,47 @@
-/*
-  Plantilla: HunigoleSan
-*/
-/*        PROBLEMA: Programa tu calculadora */
-/* 
-   Deberás cumplir todas las operaciones básicas: suma, resta, multiplicación, división,
-   también debe permitir limpiar el resultado.
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll("button");
 
-   PROPÓSITO: esta tarea consiste en lograr conseguir el objetivo para desarrollar la lógica de programación
-   MISIÓN: Aplicar todos los conocimientos que tienes sobre JavaScript para lograr el objetivo
-   VISIÓN: Comprometete a terminar la tarea, para confirmar tu propia determinación, hacia tus metas.
+let calculation = [];
+let accCalculation = "";
+let next = false;
 
-   NOTA: Dependerá de ti, que tan lejos desees llevar la funcionalidad de la calculadora
-   PSDT: Si crees que es necesario cambiar la estructura del HTML y CSS, puedes hacerlo con gusto.
-   */
+buttons.forEach((button) => {
+  button.addEventListener("click", () => calculate(button));
+});
+
+const calculate = (button) => {
+  const value = button.textContent;
+
+  if (value == "C") {
+    clearCalculation();
+  } else if (value == "=") {
+    execOperation();
+  } else {
+    if (next) {
+      if (Number(value)) {
+        calculation = [];
+      }
+      const result = eval(calculation.join(""));
+      calculation = [result];
+      next = false;
+    }
+    calculation.push(value);
+    accCalculation = calculation.join("");
+    display.value = transformMultiply(accCalculation);
+  }
+};
+
+const clearCalculation = () => {
+  calculation = [];
+  display.value = "";
+};
+
+const execOperation = () => {
+  display.value = eval(accCalculation);
+  next = true;
+};
+
+const transformMultiply = (value) => {
+  const regex = /\*/g;
+  return value.replace(regex, "x");
+};
